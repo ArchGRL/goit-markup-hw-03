@@ -1,0 +1,207 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --button-active-color: #188ce8;
+  --logo-primary-color: #2196f3;
+  --logo-secondary-color: #000000;
+  --primary-section-color: #f5f4fa;
+  --background-section-color: #2f303a;
+  --header-border-color: #ececec;
+  --box-border-color: #eeeeee;
+  --primary-font-family: "Roboto", "Verdana", sans-serif;
+  --secondary-font-family: "Raleway", "Tahoma", sans-serif;
+}
+/* ---------------------General styles-------------------- */
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+.accent {
+  color: var(--logo-primary-color);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.hero,
+.footer {
+  background-color: var(--background-section-color);
+}
+.btn {
+  font-family: var(--primary-font-family);
+  cursor: pointer;
+  border: transparent;
+}
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/*-----------------------------Header-----------------------------*/
+
+.header {
+  border: 1px solid var(--header-border-color);
+}
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.accent-header {
+  color: var(--logo-secondary-color);
+}
+.main-nav,
+.contact {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.main-nav .link {
+  color: var(--secondary-text-color);
+}
+.contact .link {
+  color: var(--primary-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--logo-primary-color);
+}
+.link.current {
+  color: var(--logo-primary-color);
+}
+
+/*----------------Studio------------------*/
+
+/*----------------Hero----------------------*/
+
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--logo-primary-color);
+}
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: var(--button-active-color);
+}
+
+/* ---------------------Our benefits---------------- */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.benefits .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------Our work------------------ */
+
+/* ---------------Our team------------------ */
+
+.team {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-section-color);
+}
+.team-item {
+  background-color: var(--primary-white-color);
+}
+.member {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+/* ------------Footer-------------- */
+
+.accent-footer {
+  color: var(--primary-white-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.map {
+  color: var(--primary-white-color);
+}
+.comunication {
+  color: var(--secondary-white-color);
+}
+
+/* ----------Page Portfolio-------------- */
+
+/* --------------Button menu------------ */
+.menu .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-section-color);
+}
+.menu .btn:hover,
+.menu .btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--logo-primary-color);
+}
+.projects .name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.projects .text {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.projects-item {
+  background: var(--primary-white-color);
+  border: 1px solid var(--box-border-color);
+}
