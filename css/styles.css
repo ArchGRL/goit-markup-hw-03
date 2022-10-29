@@ -166,7 +166,9 @@ p {
 }
 
 /* ---------------------Our benefits---------------- */
-
+.benefits {
+  margin-top: 94px;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
