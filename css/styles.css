@@ -20,7 +20,12 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
-.accent {
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--logo-primary-color);
 }
 .edge {
@@ -93,13 +98,6 @@ p {
 .header-logo {
   margin-right: 93px;
 }
-.logo {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 .accent-header {
   color: var(--logo-secondary-color);
 }
@@ -138,11 +136,17 @@ p {
 /*----------------Hero----------------------*/
 
 .hero {
+  padding: 200px 0;
   text-align: center;
   letter-spacing: 0.06em;
 }
+.hero .container {
+  width: 696px;
+  padding: 0;
+}
 .hero-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -166,9 +170,7 @@ p {
 }
 
 /* ---------------------Our benefits---------------- */
-.benefits {
-  margin-top: 94px;
-}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -204,7 +206,9 @@ p {
 }
 
 /* ---------------Our work------------------ */
-
+.work {
+  padding-bottom: 94px;
+}
 .work .list {
   display: flex;
 }
@@ -258,7 +262,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address .item {
+.address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 .map {
